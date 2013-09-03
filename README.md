@@ -8,7 +8,7 @@ Fast implementations of the so-called 'Lempel-Ziv 76' complexity measure
 
 The core complexity measure is from *On the complexity of finite sequences*, by Lempel-Ziv.
 
-This efficient implementation of the so-called *exhaustive parsing* is due to S Faul (http://www.mathworks.co.uk/matlabcentral/fileexchange/6886-kolmogorov-complexity)
+This efficient implementation of the *exhaustive parsing* is due to S Faul (http://www.mathworks.co.uk/matlabcentral/fileexchange/6886-kolmogorov-complexity)
 
 Three flavours are available:
  - LZ76 : Return the length of the dictionnary after an exhustive parsing

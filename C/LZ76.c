@@ -26,9 +26,9 @@
 #include <math.h>
 
 
-//#define WRAPPER identityWrapper //Return LZ76 of a string
+#define WRAPPER identityWrapper //Return LZ76 of a string
 //#define WRAPPER kolmogorovWrapper //Return LZ76*log2(n) of a string
-#define WRAPPER meanWrapper //Return the mean of the K complexity of a string and its reverse.
+//#define WRAPPER meanWrapper //Return the mean of the K complexity of a string and its reverse.
 
 int LZ(char * s, int n) {
   int c=1,l=1,i=0,k=1,kmax = 1,stop=0; 

@@ -15,7 +15,7 @@
 > terminalVocabulary s = S.fromList [i `B.snoc` e | i <- (B.tails (B.init s)), e <- [B.last s]] 
 
 `parse` : Exhaustive parsing of the string. Returns the length of the history. If the parsing
-is not exhaustive then add one (*e.g.* 0 | 1 | 01010101 is not exhaustive)
+is not exhaustive then add one ( *e.g.* 0 | 1 | 01010101 is not exhaustive)
 
 > parse :: B.ByteString -> Int
 > parse s =

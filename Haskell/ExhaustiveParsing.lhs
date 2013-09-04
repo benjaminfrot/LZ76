@@ -3,7 +3,7 @@
 *ExhaustiveParsing.lhs* - Perform an exhaustive parsing of a binary string.
 
 > module ExhaustiveParsing(parse) where
-> import qualified Data.ByteString as B
+> import qualified Data.ByteString.Lazy as B
 > import qualified Data.Set as S
 
 

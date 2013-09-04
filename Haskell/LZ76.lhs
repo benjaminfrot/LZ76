@@ -5,8 +5,8 @@
 > -- Write the help
 > import System.Console.CmdArgs
 > import ExhaustiveParsing
-> import qualified Data.ByteString.Char8 as C
-> import qualified Data.ByteString as B
+> import qualified Data.ByteString.Lazy.Char8 as C
+> import qualified Data.ByteString.Lazy as B
 > import Data.List
 
 > summaryStr = summary "LZ76 : Compute the Lempel-Ziv complexity of binary strings."

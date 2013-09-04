@@ -31,12 +31,21 @@
 >	do
 >		args <- mode
 >		case args of 
+
+	- If it is `lz` (default) then return the length of the history after the exhaustive parsing.
+
 >			LZ {filename = fn} -> do 
 >				str <- getStr fn
 >				(putStrLn.printDistribution.(map (fromIntegral.parse))) str
+
+	- If it is `kolmogorov` then return the same thing as `lz` but multiply by log2(string length).
+
 >			Kolmogorov {filename = fn} -> do
 >				str <- getStr fn
 >				(putStrLn.printDistribution.(map k)) str
+
+	- If it is `meankolmogorov` then return the mean `kolmogorov` of the string and its reverse.
+
 >			MeanKolmogorov {filename = fn} -> do
 >				str <- getStr fn
 >				(putStrLn.printDistribution.(map meanK)) str

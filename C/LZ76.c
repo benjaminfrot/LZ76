@@ -75,10 +75,13 @@ float kolmogorovWrapper(char *s, int n){
 //Return the mean K-Complexity of s and rev(s).
 float meanWrapper(char * s, int n) {
   char * revs = (char *) malloc(n*sizeof(char));
+  float v;
   int j;
   for (j = 0 ; j < n ; j++)
     revs[j] = s[n-1-j];
-  return (kolmogorovWrapper(s,n) + kolmogorovWrapper(revs,n))/2.0;
+  v = (kolmogorovWrapper(s,n) + kolmogorovWrapper(revs,n))/2.0;
+  free(revs);
+  return v;
 }
 
 int main(int argc, char** argv) {
